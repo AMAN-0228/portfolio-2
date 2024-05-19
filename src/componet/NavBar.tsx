@@ -83,7 +83,7 @@ const NavBar = () => {
                             />
                         </svg>
 
-                        <div className={`bg-base2 w-[50%] transition-all duration-500 py-5 px-2 absolute h-screen top-0  flex justify-between ${toggle ? 'left-0' : 'left-[-100%]'}`}>
+                        <div className={`bg-base2 w-[50%] transition-all duration-500 py-5 px-2 absolute h-screen top-0 left-0  flex justify-between ${toggle ? ' translate-x-0' : 'translate-x-[-100%]'}`}>
 
                             <div className={`flex flex-col  items-center `}>
 
@@ -118,7 +118,7 @@ const NavBar = () => {
                     <NameIcon />
                 </div>
                 <div className="z-50">
-                    <button onClick={() => window.alert("Resume")} className={`bg-base2 px-5 md:px-8 py-1 rounded-3xl`}><span className="text-text1 mx-12">Resume</span></button>
+                    <button onClick={() => window.alert("Resume")} className={`bg-base2 px-5 md:px-8 py-1 rounded-3xl`}><span className="text-text1">Resume</span></button>
 
                 </div>
             </div>
