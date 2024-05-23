@@ -53,7 +53,7 @@ const NavBar = () => {
 
     return (
         <>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center px-2">
                 <>
                     <div className="hidden md:flex justify-center items-center ">
                         {navLinks &&
@@ -117,8 +117,8 @@ const NavBar = () => {
                 <div>
                     <NameIcon />
                 </div>
-                <div className="z-50">
-                    <button onClick={() => window.alert("Resume")} className={`bg-base2 px-5 md:px-8 py-1 rounded-3xl`}><span className="text-text1">Resume</span></button>
+                <div className="z-50 relative">
+                    <button onClick={() => window.alert("Resume")} className={`z-[99999] bg-base2 px-5 md:px-8 py-1 rounded-3xl`}><span className="text-text1">Resume</span></button>
 
                 </div>
             </div>
